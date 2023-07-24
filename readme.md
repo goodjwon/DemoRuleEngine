@@ -12,3 +12,8 @@
 ## 활용방법
 
 ## 결론
+
+## 참고자료
+- https://medium.com/@er.rameshkatiyar/implement-your-own-rule-engine-java8-springboot-mvel-5928474e1ba5
+- https://github.com/eugenp/tutorials/tree/master/drools
+- https://ryuuun.tistory.com/13
