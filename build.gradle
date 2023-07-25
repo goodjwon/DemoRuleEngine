@@ -30,6 +30,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation group: 'org.mvel', name: 'mvel2', version: '2.5.0.Final'
+	implementation group: 'com.google.guava', name: 'guava', version: '32.1.1-jre'
 }
 
 tasks.named('test') {
