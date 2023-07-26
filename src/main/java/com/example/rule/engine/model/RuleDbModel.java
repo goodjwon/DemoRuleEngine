@@ -1,4 +1,4 @@
-package com.example.rule.engine;
+package com.example.rule.engine.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

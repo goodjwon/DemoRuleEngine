@@ -1,5 +1,8 @@
-package com.example.rule.engine;
+package com.example.rule.engine.parser;
 
+import com.example.rule.engine.DSLKeywordResolver;
+import com.example.rule.engine.DSLPatternUtil;
+import com.example.rule.engine.DSLResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;
