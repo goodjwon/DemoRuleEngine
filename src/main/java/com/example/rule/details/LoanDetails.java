@@ -1,4 +1,4 @@
-package com.example.rule.engine.details;
+package com.example.rule.details;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

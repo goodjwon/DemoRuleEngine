@@ -1,8 +1,8 @@
 package com.example.rule.engine;
 
-import com.example.rule.engine.model.Rule;
-import com.example.rule.engine.model.RuleNamespace;
-import com.example.rule.engine.parser.RuleParser;
+import com.example.rule.model.Rule;
+import com.example.rule.model.RuleNamespace;
+import com.example.rule.parser.RuleParser;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

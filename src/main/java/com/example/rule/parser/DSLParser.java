@@ -1,19 +1,17 @@
-package com.example.rule.engine.parser;
+package com.example.rule.parser;
 
-import com.example.rule.engine.DSLKeywordResolver;
-import com.example.rule.engine.DSLPatternUtil;
-import com.example.rule.engine.DSLResolver;
+import com.example.resolver.DSLKeywordResolver;
+import com.example.rule.DSLPatternUtil;
+import com.example.resolver.DSLResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Slf4j

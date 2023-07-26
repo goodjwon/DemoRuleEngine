@@ -1,4 +1,4 @@
-package com.example.rule.engine;
+package com.example.resolver;
 
 import org.springframework.stereotype.Component;
 

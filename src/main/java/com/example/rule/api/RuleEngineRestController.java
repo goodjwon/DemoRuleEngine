@@ -1,15 +1,15 @@
-package com.example.rule.engine.api;
+package com.example.rule.api;
 
-import com.example.rule.engine.InsuranceInferenceEngine;
-import com.example.rule.engine.KnowledgeBaseService;
-import com.example.rule.engine.LoanInferenceEngine;
+import com.example.engine.InsuranceInferenceEngine;
+import com.example.rule.details.InsuranceDetails;
+import com.example.rule.details.LoanDetails;
+import com.example.rule.details.UserDetails;
+import com.example.rule.KnowledgeBaseService;
+import com.example.engine.LoanInferenceEngine;
 import com.example.rule.engine.RuleEngine;
-import com.example.rule.engine.details.InsuranceDetails;
-import com.example.rule.engine.details.LoanDetails;
-import com.example.rule.engine.details.PolicyHolderDetails;
-import com.example.rule.engine.details.UserDetails;
-import com.example.rule.engine.model.Rule;
-import com.example.rule.engine.model.RuleNamespace;
+import com.example.rule.details.PolicyHolderDetails;
+import com.example.rule.model.Rule;
+import com.example.rule.model.RuleNamespace;
 import com.google.common.base.Enums;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

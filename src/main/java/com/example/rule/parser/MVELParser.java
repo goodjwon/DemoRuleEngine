@@ -1,4 +1,4 @@
-package com.example.rule.engine.parser;
+package com.example.rule.parser;
 
 import org.mvel2.MVEL;
 

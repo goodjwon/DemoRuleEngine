@@ -1,6 +1,6 @@
-package com.example.rule.engine;
+package com.example.rule.utils;
 
-import com.example.rule.engine.model.RuleDbModel;
+import com.example.rule.model.RuleDbModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
