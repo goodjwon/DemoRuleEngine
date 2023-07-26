@@ -1,6 +1,6 @@
 package com.example.rule.engine;
 
-import com.example.rule.KnowledgeBaseService;
+import com.example.rule.service.KnowledgeBaseService;
 import com.example.rule.model.Rule;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

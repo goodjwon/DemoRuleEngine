@@ -1,4 +1,4 @@
-package com.example.rule.utils;
+package com.example.rule.repository;
 
 import com.example.rule.model.RuleDbModel;
 import org.springframework.data.jpa.repository.JpaRepository;

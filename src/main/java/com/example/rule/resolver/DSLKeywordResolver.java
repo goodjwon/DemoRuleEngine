@@ -1,4 +1,4 @@
-package com.example.resolver;
+package com.example.rule.resolver;
 
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

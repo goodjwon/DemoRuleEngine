@@ -1,8 +1,8 @@
 package com.example.rule.parser;
 
-import com.example.resolver.DSLKeywordResolver;
-import com.example.rule.DSLPatternUtil;
-import com.example.resolver.DSLResolver;
+import com.example.rule.resolver.DSLKeywordResolver;
+import com.example.rule.utils.DSLPatternUtil;
+import com.example.rule.resolver.DSLResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;

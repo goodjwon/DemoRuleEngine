@@ -7,6 +7,37 @@
 
 ## Rule Base Engin 대표주자는?
 
+## 기초데이터
+```sql
+INSERT INTO rules 
+ (rule_namespace , rule_id, condition_text, 
+ action_text, priority, description_text) 
+VALUES (
+ 'LOAN',
+ '1',
+ 'input.monthlySalary >= 50000 && input.creditScore >= 800 && input.requestedLoanAmount < 4000000 && $(bank.target_done) == false', 
+ 'output.setApprovalStatus(true);output.setSanctionedPercentage(90);output.setProcessingFees(8000);', 
+ '1', 
+ 'A person is eligible for Home loan?'
+);
+
+INSERT INTO rules 
+ (rule_namespace , rule_id, condition_text, 
+ action_text, priority, description_text) 
+VALUES (
+ 'LOAN',
+ '2',
+ 'input.monthlySalary >= 35000 && input.monthlySalary <= 50000 && input.creditScore <= 500 && input.requestedLoanAmount < 2000000 && $(bank.target_done) == false',
+'output.setApprovalStatus(true);output.setSanctionedPercentage(60);output.setProcessingFees(2000);', 
+ '2', 
+ 'A person is eligible for Home loan?'
+);
+
+commit;
+
+```
+
+
 ## 테스트 방법
 
 ## 활용방법

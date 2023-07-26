@@ -1,4 +1,4 @@
-package com.example.rule;
+package com.example.rule.utils;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;

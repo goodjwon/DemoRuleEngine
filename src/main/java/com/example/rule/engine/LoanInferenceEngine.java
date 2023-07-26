@@ -1,4 +1,4 @@
-package com.example.engine;
+package com.example.rule.engine;
 
 import com.example.rule.engine.InferenceEngine;
 import com.example.rule.details.LoanDetails;

@@ -1,11 +1,11 @@
 package com.example.rule.api;
 
-import com.example.engine.InsuranceInferenceEngine;
+import com.example.rule.engine.InsuranceInferenceEngine;
 import com.example.rule.details.InsuranceDetails;
 import com.example.rule.details.LoanDetails;
 import com.example.rule.details.UserDetails;
-import com.example.rule.KnowledgeBaseService;
-import com.example.engine.LoanInferenceEngine;
+import com.example.rule.service.KnowledgeBaseService;
+import com.example.rule.engine.LoanInferenceEngine;
 import com.example.rule.engine.RuleEngine;
 import com.example.rule.details.PolicyHolderDetails;
 import com.example.rule.model.Rule;

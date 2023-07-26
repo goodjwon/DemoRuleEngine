@@ -1,9 +1,9 @@
-package com.example.rule;
+package com.example.rule.service;
 
 import com.example.rule.model.Rule;
 import com.example.rule.model.RuleDbModel;
 import com.example.rule.model.RuleNamespace;
-import com.example.rule.utils.RulesRepository;
+import com.example.rule.repository.RulesRepository;
 import com.google.common.base.Enums;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
