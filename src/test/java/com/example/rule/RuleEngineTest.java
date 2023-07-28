@@ -66,7 +66,7 @@ public class RuleEngineTest {
 				.accountNumber(1234567L)
 				.requestedLoanAmount(1000000.0)
 				.monthlySalary(50000.0)
-				.cibilScore(600)
+				.creditScore(600)
 				.age(25)
 				.build();
 
@@ -98,7 +98,7 @@ public class RuleEngineTest {
 				.accountNumber(1234567L)
 				.requestedLoanAmount(800000.0)
 				.monthlySalary(30000.0)
-				.cibilScore(400)
+				.creditScore(400)
 				.age(25)
 				.build();
 
@@ -126,7 +126,7 @@ public class RuleEngineTest {
 		Rule rule1 = Rule.builder()
 				.ruleNamespace(RuleNamespace.LOAN)
 				.ruleId("1")
-				.condition("input.monthlySalary >= 50000.0 && input.cibilScore >= 500 && input.requestedLoanAmount<1500000 && $(bank.target_done) == false")
+				.condition("input.monthlySalary >= 50000.0 && input.creditScore >= 500 && input.requestedLoanAmount<1500000 && $(bank.target_done) == false")
 				.action("output.setApprovalStatus(true); output.setInterestRate($(bank.interest)); output.setSanctionedPercentage(90);output.setProcessingFees(2000);output.setAccountNumber(input.accountNumber);")
 				.priority(1)
 				.description("A person is eligible for loan?")
@@ -134,7 +134,7 @@ public class RuleEngineTest {
 		Rule rule2 = Rule.builder()
 				.ruleNamespace(RuleNamespace.LOAN)
 				.ruleId("2")
-				.condition("(input.monthlySalary < 50000.0 && input.cibilScore <= 300 && input.requestedLoanAmount >= 1000000) || $(bank.target_done) == true")
+				.condition("(input.monthlySalary < 50000.0 && input.creditScore <= 300 && input.requestedLoanAmount >= 1000000) || $(bank.target_done) == true")
 				.action("output.setApprovalStatus(false); output.setInterestRate(0.0); output.setSanctionedPercentage(0.0);output.setProcessingFees(0);output.setAccountNumber(input.accountNumber);")
 				.priority(2)
 				.description("A person is eligible for car loan?")
@@ -142,7 +142,7 @@ public class RuleEngineTest {
 		Rule rule3 = Rule.builder()
 				.ruleNamespace(RuleNamespace.LOAN)
 				.ruleId("3")
-				.condition("input.monthlySalary >= 20000.0 && input.cibilScore >= 300 && input.cibilScore < 500 && input.requestedLoanAmount <= 1000000 && $(bank.target_done) == false")
+				.condition("input.monthlySalary >= 20000.0 && input.creditScore >= 300 && input.creditScore < 500 && input.requestedLoanAmount <= 1000000 && $(bank.target_done) == false")
 				.action("output.setApprovalStatus(true); output.setInterestRate($(bank.interest)); output.setSanctionedPercentage(70);output.setProcessingFees(1000);output.setAccountNumber(input.accountNumber);")
 				.priority(2)
 				.description("A person is eligible for car loan?")
