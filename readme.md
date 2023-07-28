@@ -39,6 +39,9 @@ commit;
 
 
 ## 테스트 방법
+- 전체 룰 확인 : http://localhost:8080/get-all-rules
+- 
+
 
 ## 활용방법
 
