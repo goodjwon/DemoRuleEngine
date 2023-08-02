@@ -40,7 +40,31 @@ commit;
 
 ## 테스트 방법
 - 전체 룰 확인 : http://localhost:8080/get-all-rules
-- 
+- 요청에 대한 룰 결과 확인  http://localhost:8080/loan
+- 요청
+```json
+{
+ "creditScore": 900,
+ "firstName": "Mark",
+ "lastName": "K",
+ "age": "25",
+ "accountNumber": 123456789,
+ "bank": "ABC BANK",
+ "requestedLoanAmount": 3500000.0,
+ "monthlySalary": 70000.0
+}
+```
+
+- 응답
+```json
+{
+    "accountNumber": null,
+    "approvalStatus": true,
+    "interestRate": null,
+    "sanctionedPercentage": 90.0,
+    "processingFees": 8000.0
+}
+``` 
 
 
 ## 활용방법
